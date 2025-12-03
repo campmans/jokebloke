@@ -22,5 +22,8 @@ conda activate jokebloke
 
 # install dependencies
 
-conda install ipykernel
+conda install ipykernel #probably not needed
 pip install -r requirements.txt
+
+# to run in browser:
+voila jokebloke.ipynb
