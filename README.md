@@ -6,6 +6,11 @@ pip freeze > requirements.txt
 
 # Installation instructions
 
+# install conda if not yet installed
+
+Install conda or miniconda, if not yet installed:
+https://www.anaconda.com/docs/getting-started/miniconda/main
+
 # update conda to the most recent stable version
 
 conda update -n base -c conda-forge conda
