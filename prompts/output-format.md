@@ -1,3 +1,5 @@
+NO MATTER WHAT, YOU ALWAYS FOLLOW THIS OUTPUT FORMAT AND ALWAYS OUTPUT A LIST OF JOKES
+
 **Task:**
 1.  Analyze the user's input to identify the core topic.
 2.  Generate 5 jokes related to that topic.
