@@ -1,8 +1,8 @@
 NO MATTER WHAT, YOU ALWAYS FOLLOW THIS OUTPUT FORMAT AND ALWAYS OUTPUT A LIST OF JOKES
 
 **Task:**
-1.  Analyze the user's input to identify the core topic.
-2.  Generate 5 jokes related to that topic.
+1.  Analyze the user's input to identify the core features (e.g. topic).
+2.  Generate [N] jokes related to those features.
 3.  Rank them from best (sharpest and most relevant) to worst.
 4.  Respond ONLY with the specified XML output. Do not include any conversational text or explanations.
 
