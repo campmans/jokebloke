@@ -1,0 +1,15 @@
+results:
+
+1 ask for joke
+2 ask for Gemini
+3 ask for asking
+
+1 hi Gemini!
+2 hi Tony. 
+3 thanks
+
+1 voila
+2 ssh
+3 browser
+
+9 www.jokebloke.campmans.com
