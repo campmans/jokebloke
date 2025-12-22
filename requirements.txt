@@ -20,6 +20,7 @@ executing
 fastjsonschema==2.21.2
 fqdn==1.5.1
 google-api-python-client
+google-generativeai
 idna==3.11
 ipyaudioworklet==0.6.0
 ipydatawidgets==4.3.5
