@@ -62,8 +62,6 @@ pycparser==2.23
 Pygments
 python-dateutil
 python-json-logger==4.0.0
-pywin32
-pywinpty==3.0.2
 PyYAML==6.0.3
 pyzmq
 referencing==0.37.0
