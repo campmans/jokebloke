@@ -1,8 +1,9 @@
-﻿anyio==4.12.0
+﻿
+anyio==4.12.0
 argon2-cffi==25.1.0
 argon2-cffi-bindings==25.1.0
 arrow==1.4.0
-asttokens @ file:///C:/Users/dev-admin/buildout/croot/asttokens_1759955575391/work
+asttokens
 attrs==25.4.0
 babel==2.17.0
 beautifulsoup4==4.14.3
@@ -10,31 +11,31 @@ bleach==6.3.0
 certifi==2025.11.12
 cffi==2.0.0
 charset-normalizer==3.4.4
-colorama @ file:///C:/Users/dev-admin/buildout/croot/colorama_1759952627215/work
-comm @ file:///C:/Users/dev-admin/buildout/croot/comm_1763637613849/work
-debugpy @ file:///C:/miniconda3/conda-bld/debugpy_1762421656989/work
-decorator @ file:///C:/Users/dev-admin/buildout/croot/decorator_1759956412694/work
+colorama
+comm
+debugpy
+decorator
 defusedxml==0.7.1
-executing @ file:///C:/Users/dev-admin/buildout/croot/executing_1761985455628/work
+executing
 fastjsonschema==2.21.2
 fqdn==1.5.1
 idna==3.11
 ipyaudioworklet==0.6.0
 ipydatawidgets==4.3.5
-ipykernel @ file:///C:/miniconda3/conda-bld/ipykernel_1762946091833/work
-ipython @ file:///C:/miniconda3/conda-bld/ipython_1762789318352/work
-ipython_pygments_lexers @ file:///C:/Users/dev-admin/buildout/croot/ipython_pygments_lexers_1759956485878/work
+ipykernel
+ipython
+ipython_pygments_lexers
 ipywidgets==8.1.8
 isoduration==20.11.0
-jedi @ file:///C:/Users/dev-admin/buildout/croot/jedi_1759956512541/work
+jedi
 Jinja2==3.1.6
 json5==0.12.1
 jsonpointer==3.0.0
 jsonschema==4.25.1
 jsonschema-specifications==2025.9.1
 jupyter-events==0.12.0
-jupyter_client @ file:///C:/miniconda3/conda-bld/jupyter_client_1762943104310/work
-jupyter_core @ file:///C:/miniconda3/conda-bld/jupyter_core_1762854775045/work
+jupyter_client
+jupyter_core
 jupyter_server==2.17.0
 jupyter_server_terminals==0.5.3
 jupyterlab_pygments==0.3.0
@@ -42,29 +43,29 @@ jupyterlab_server==2.28.0
 jupyterlab_widgets==3.0.16
 lark==1.3.1
 MarkupSafe==3.0.3
-matplotlib-inline @ file:///C:/miniconda3/conda-bld/matplotlib-inline_1762779269415/work
+matplotlib-inline
 mistune==3.1.4
 nbclient==0.10.2
 nbconvert==7.16.6
 nbformat==5.10.4
-nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1613680548246/work
+nest-asyncio
 numpy==2.3.5
-packaging @ file:///C:/miniconda3/conda-bld/packaging_1761049098810/work
+packaging
 pandocfilters==1.5.1
-parso @ file:///C:/miniconda3/conda-bld/parso_1762781931209/work
-platformdirs @ file:///C:/miniconda3/conda-bld/platformdirs_1762356618739/work
+parso
+platformdirs
 prometheus_client==0.23.1
-prompt_toolkit @ file:///C:/miniconda3/conda-bld/prompt-toolkit_1761745044554/work
-psutil @ file:///C:/miniconda3/conda-bld/psutil_1761896536168/work
-pure_eval @ file:///C:/Users/dev-admin/buildout/croot/pure_eval_1759956052992/work
+prompt_toolkit
+psutil
+pure_eval
 pycparser==2.23
-Pygments @ file:///C:/Users/dev-admin/buildout/croot/pygments_1762546955213/work
-python-dateutil @ file:///C:/Users/dev-admin/buildout/croot/python-dateutil_1759954839763/work
+Pygments
+python-dateutil
 python-json-logger==4.0.0
-pywin32 @ file:///C:/Users/dev-admin/buildout/croot/pywin32_1759953972432/work
+pywin32
 pywinpty==3.0.2
 PyYAML==6.0.3
-pyzmq @ file:///C:/miniconda3/conda-bld/pyzmq_1762375620799/work
+pyzmq
 referencing==0.37.0
 requests==2.32.5
 rfc3339-validator==0.1.4
@@ -72,20 +73,20 @@ rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
 rpds-py==0.30.0
 Send2Trash==1.8.3
-six @ file:///C:/Users/dev-admin/buildout/croot/six_1759954493303/work
+six
 soupsieve==2.8
-stack_data @ file:///C:/Users/dev-admin/buildout/croot/stack_data_1759957300617/work
+stack_data
 terminado==0.18.1
 tinycss2==1.4.0
-tornado @ file:///C:/Users/dev-admin/buildout/croot/tornado_1759954992390/work
-traitlets @ file:///C:/Users/dev-admin/buildout/croot/traitlets_1759954525269/work
+tornado
+traitlets
 traittypes==0.2.3
 typing_extensions==4.15.0
 tzdata==2025.2
 uri-template==1.3.0
 urllib3==2.5.0
 voila==0.5.11
-wcwidth @ file:///C:/Users/dev-admin/buildout/croot/wcwidth_1759968499540/work
+wcwidth
 voila
 webcolors==25.10.0
 webencodings==0.5.1
