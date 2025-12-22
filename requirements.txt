@@ -19,6 +19,7 @@ defusedxml==0.7.1
 executing
 fastjsonschema==2.21.2
 fqdn==1.5.1
+google
 idna==3.11
 ipyaudioworklet==0.6.0
 ipydatawidgets==4.3.5
