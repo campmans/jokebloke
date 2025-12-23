@@ -17,13 +17,19 @@ conda update -n base -c conda-forge conda
 
 # create and activate conda environment
 
-conda create -n jokebloke         # creates new virtual env
+# create conda python <= 3.12
+
+conda create -n "jokebloke" python=3.12.4 ipython
 conda activate jokebloke    
 
 # install dependencies
 
 conda install ipykernel #probably not needed
 pip install -r requirements.txt
+
+# install spacy
+
+python -m spacy download en_core_web_sm
 
 # to run in browser:
 voila jokebloke.ipynb
