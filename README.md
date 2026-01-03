@@ -52,7 +52,8 @@ npm -v # Should print "11.6.2".
 npm install -g @google/gemini-cli
 
 # install Gemini API key into user
-
+cho 'export GEMINI_API_KEY="your-new-api-key-here"' >> ~/.bashrc
+source ~/.bashrc
 
 # to run in browser:
 voila jokebloke.ipynb
