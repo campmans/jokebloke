@@ -1,0 +1,9 @@
+# Files and patterns to ignore in Voilà
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.git/
+.vscode/
+*.log
+results.txt
+memory_agent.ipynb
