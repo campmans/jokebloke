@@ -1,4 +1,4 @@
-﻿
+﻿cockpit==0.15.3
 anyio==4.12.0
 argon2-cffi==25.1.0
 argon2-cffi-bindings==25.1.0
@@ -54,7 +54,7 @@ nbclient==0.10.2
 nbconvert==7.16.6
 nbformat==5.10.4
 nest-asyncio
-numpy==2.3.5
+numpy
 packaging
 pandocfilters==1.5.1
 parso
