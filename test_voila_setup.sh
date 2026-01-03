@@ -22,7 +22,7 @@ python -c "import spacy; import pygame; import ipywidgets; import voila; print('
 # Check spaCy model
 echo ""
 echo "✓ Checking spaCy model:"
-python -c "import spacy; nlp = spacy.load('en_core_web_sm'); print('  en_core_web_sm loaded successfully')"
+python -c "import spacy; nlp = spacy.load('nl_core_news_sm'); print('  nl_core_news_sm loaded successfully')"
 
 # Check notebook exists
 echo ""
