@@ -25,6 +25,22 @@ else
 fi
 
 echo ""
+echo "🇬🇧 English UK (en_core_web_sm):"
+if python -c "import spacy; spacy.load('en_core_web_sm')" 2>/dev/null; then
+    echo "  ✅ Installed"
+else
+    echo "  ❌ Not installed - Run: python -m spacy download en_core_web_sm"
+fi
+
+echo ""
+echo "🇮🇹 Italiano (it_core_news_sm):"
+if python -c "import spacy; spacy.load('it_core_news_sm')" 2>/dev/null; then
+    echo "  ✅ Installed"
+else
+    echo "  ❌ Not installed - Run: python -m spacy download it_core_news_sm"
+fi
+
+echo ""
 echo "📝 Checking notebook configuration..."
 
 # Check if LANGUAGE_CONFIG exists in notebook
@@ -42,8 +58,8 @@ else
 fi
 
 # Check for both language codes
-if grep -q "'nl':" jokebloke.ipynb && grep -q "'de':" jokebloke.ipynb; then
-    echo "  ✅ Both Dutch and German configurations present"
+if grep -q "'nl':" jokebloke.ipynb && grep -q "'de':" jokebloke.ipynb && grep -q "'en-gb':" jokebloke.ipynb && grep -q "'it':" jokebloke.ipynb; then
+    echo "  ✅ All language configurations present (Dutch, German, English UK, Italian)"
 else
     echo "  ❌ Language configurations incomplete"
 fi
@@ -60,6 +76,12 @@ if [ ! -z "$CURRENT_LANG" ]; then
         "de")
             echo "  🇩🇪 Deutsch aktiv"
             ;;
+        "en-gb")
+            echo "  🇬🇧 English (UK) active"
+            ;;
+        "it")
+            echo "  🇮🇹 Italiano attivo"
+            ;;
         *)
             echo "  ⚠️  Unknown language code"
             ;;
@@ -74,7 +96,7 @@ echo "✅ Verification complete!"
 echo ""
 echo "To change language:"
 echo "  1. Open jokebloke.ipynb"
-echo "  2. Change LANGUAGE = 'nl' or LANGUAGE = 'de' in cell 2"
+echo "  2. Change LANGUAGE = 'nl', 'de', 'en-gb', or 'it' in cell 2"
 echo "  3. Restart kernel"
 echo "  4. Run ./start_jokebloke.sh"
 echo ""

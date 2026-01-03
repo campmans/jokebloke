@@ -4,9 +4,11 @@
 
 JokeBloke ondersteunt nu meerdere talen! / JokeBloke unterstützt jetzt mehrere Sprachen! / JokeBloke now supports multiple languages!
 
-### Ondersteunde Talen / Unterstützte Sprachen / Supported Languages:
+### Ondersteunde Talen / Unterstützte Sprachen / Supported Languages / Lingue Supportate:
 - 🇳🇱 **Nederlands** (Dutch) - Standaard / Default
-- 🇩🇪 **Deutsch** (German) - Nieuw! / Neu! / New!
+- 🇩🇪 **Deutsch** (German)
+- 🇬🇧 **English (UK)** (British English)
+- 🇮🇹 **Italiano** (Italian) - Nieuw! / Neu! / New! / Nuovo!
 
 ## 🚀 Taal Wijzigen / Sprache Ändern / Changing Language
 
@@ -18,12 +20,14 @@ In **cel 2** (na de imports), vind je:
 
 ```python
 # Configureer de gewenste taal hier / Configure desired language here
-LANGUAGE = 'nl'  # Opties / Options: 'nl', 'de'
+LANGUAGE = 'nl'  # Opties / Optionen / Options / Opzioni: 'nl', 'de', 'en-gb', 'it'
 ```
 
-Wijzig naar / Ändern zu / Change to:
+Wijzig naar / Ändern zu / Change to / Cambia a:
 - Voor Nederlands: `LANGUAGE = 'nl'`
 - Für Deutsch: `LANGUAGE = 'de'`
+- For English (UK): `LANGUAGE = 'en-gb'`
+- Per l'Italiano: `LANGUAGE = 'it'`
 
 ### Stap 3 / Schritt 3 / Step 3: Installeer spaCy Model
 Installeer het juiste taalmodel / Installieren Sie das richtige Sprachmodell:
@@ -34,6 +38,12 @@ python -m spacy download nl_core_news_sm
 
 # Für Deutsch / For German:
 python -m spacy download de_core_news_sm
+
+# For English (UK):
+python -m spacy download en_core_web_sm
+
+# Per l'Italiano / For Italian:
+python -m spacy download it_core_news_sm
 ```
 
 ### Stap 4 / Schritt 4 / Step 4: Herstart de Kernel
@@ -87,6 +97,48 @@ python -m spacy download de_core_news_sm
 - "Meine Autoren streiken wieder..."
 - Und mehr...
 
+### English (UK) (en-gb) 🇬🇧
+
+#### NLP Processing:
+- **spaCy model**: `en_core_web_sm`
+- **Speech recognition**: `en-GB`
+- **Text-to-speech**: `en` with British accent (tld: co.uk)
+
+#### UI Texts:
+- "Do you like this?"
+- "Thinking of something funny..."
+- "Recorder ready"
+- "Transcription:", "Personality:", "Response:"
+- "Cheers!" / "Blimey, tough crowd!"
+
+#### Loading Messages (16):
+- "Hold on, I'm working on it..."
+- "Comedy takes time, unlike my ex's patience..."
+- "My writers are on strike again..."
+- "Buffering humour... have you tried turning me off and on again?"
+- And more...
+
+### Italiano (it) 🇮🇹
+
+#### Elaborazione NLP:
+- **Modello spaCy**: `it_core_news_sm`
+- **Riconoscimento vocale**: `it-IT`
+- **Sintesi vocale**: `it`
+
+#### Testi UI:
+- "Ti piace?"
+- "Sto pensando qualcosa di divertente..."
+- "Registratore pronto"
+- "Trascrizione:", "Personalità:", "Risposta:"
+- "Grazie!" / "Mamma mia, che pubblico difficile!"
+
+#### Messaggi di Caricamento (16):
+- "Aspetta, ci sto lavorando..."
+- "La commedia richiede tempo, a differenza della pazienza della mia ex..."
+- "I miei autori sono di nuovo in sciopero..."
+- "Buffering comicità... hai provato a spegnermi e riaccendermi?"
+- E altro ancora...
+
 ## 🔧 Technische Implementatie / Technische Implementierung / Technical Implementation
 
 ### Taalconfiguratie Structuur / Sprachkonfigurationsstruktur:
@@ -108,6 +160,23 @@ LANGUAGE_CONFIG = {
         'tts_lang': 'de',
         'ui': { ... },  # Alle UI-Texte
         'loading_messages': [ ... ]  # 16 Lademeldungen
+    },
+    'en-gb': {
+        'name': 'English (UK)',
+        'spacy_model': 'en_core_web_sm',
+        'speech_recognition': 'en-GB',
+        'tts_lang': 'en',
+        'tts_tld': 'co.uk',  # British accent
+        'ui': { ... },  # All UI texts
+        'loading_messages': [ ... ]  # 16 loading messages
+    },
+    'it': {
+        'name': 'Italiano',
+        'spacy_model': 'it_core_news_sm',
+        'speech_recognition': 'it-IT',
+        'tts_lang': 'it',
+        'ui': { ... },  # Tutti i testi UI
+        'loading_messages': [ ... ]  # 16 messaggi di caricamento
     }
 }
 ```
@@ -149,17 +218,37 @@ text_label = widgets.Label(value=current_lang['ui']['like_question'])
 - "Bring mich zum Lachen"
 ```
 
+### English (UK) Testing:
+```bash
+# Set LANGUAGE = 'en-gb' in cell 2
+# Speak to JokeBloke:
+- "Tell me a joke"
+- "I love comedy"
+- "Make me laugh"
+```
+
+### Italiano Testing / Test Italiano:
+```bash
+# Imposta LANGUAGE = 'it' nella cella 2
+# Parla con JokeBloke:
+- "Raccontami una barzelletta"
+- "Amo la commedia"
+- "Fammi ridere"
+```
+
 ## 📦 Installatie / Installation
 
-### Beide Talen Installeren / Beide Sprachen Installieren:
+### Beide Talen Installeren / Beide Sprachen Installieren / Install All Languages:
 
 ```bash
-# Installeer beide spaCy modellen
+# Installeer alle spaCy modellen / Install all spaCy models
 python -m spacy download nl_core_news_sm
 python -m spacy download de_core_news_sm
+python -m spacy download en_core_web_sm
+python -m spacy download it_core_news_sm
 
 # Verifieer installatie
-./test_voila_setup.sh
+./verify_multilanguage.sh
 ```
 
 ## 🎯 Voorbeelden / Beispiele / Examples
@@ -172,13 +261,21 @@ python -m spacy download de_core_news_sm
 4. Start Voilà
 5. Spreek Duits tegen JokeBloke!
 
-### Beispiel 2: Wechsel von Deutsch zu Niederländisch
+### Beispiel 2: Wechsel von Deutsch zu Niederländisch / Example 3: Switch to English
 
-1. Öffnen Sie `jokebloke.ipynb`
-2. Ändern Sie Zelle 2: `LANGUAGE = 'nl'`
-3. Kernel neu starten
-4. Voilà starten
-5. Sprechen Sie Niederländisch mit JokeBloke!
+1. Öffnen Sie `jokebloke.ipynb` / Open `jokebloke.ipynb`
+2. Ändern Sie Zelle 2 / Change cell 2: `LANGUAGE = 'en-gb'`
+3. Kernel neu starten / Restart kernel
+4. Voilà starten / Start Voilà
+5. Sprechen Sie Englisch mit JokeBloke! / Speak English to JokeBloke!
+
+### Voorbeeld 3: Van Nederlands naar Engels / Example 3: Dutch to English
+
+1. Open `jokebloke.ipynb`
+2. Wijzig cel 2: `LANGUAGE = 'en-gb'`
+3. Herstart kernel
+4. Start Voilà
+5. Spreek Engels tegen JokeBloke!
 
 ## 🆕 Nieuwe Talen Toevoegen / Neue Sprachen Hinzufügen / Adding New Languages
 
@@ -234,12 +331,13 @@ LANGUAGE = 'fr'
 ## 📚 Documentatie / Dokumentation / Documentation
 
 - [DUTCH_LANGUAGE.md](DUTCH_LANGUAGE.md) - Nederlandse documentatie
-- [README.md](README.md) - Algemene informatie / Allgemeine Informationen
-- [VOILA_DEPLOYMENT.md](VOILA_DEPLOYMENT.md) - Deployment instructies
-
-## ✅ Status
-
-**Multi-Language Support**: ✅ VOLTOOID / ABGESCHLOSSEN / COMPLETE
+- [README.md](README.md) - Algemene informatie / Allgemein / NLP processing per language
+- ✅ Spraakherkenning per taal / Spracherkennung pro Sprache / Speech recognition per language
+- ✅ Tekst-naar-spraak per taal / Text-zu-Sprache pro Sprache / Text-to-speech per language
+- ✅ UI in gekozen taal / UI in gewählter Sprache / UI in chosen language
+- ✅ Dynamische laadberichten / Dynamische Lademeldungen / Dynamic loading messages
+- ✅ Feedback systeem per taal / Feedback-System pro Sprache / Feedback system per language
+- ✅ British accent support (en-gb)MPLETE
 
 Ondersteunde functionaliteit / Unterstützte Funktionalität / Supported Features:
 - ✅ NLP verwerking per taal / NLP-Verarbeitung pro Sprache
@@ -250,11 +348,11 @@ Ondersteunde functionaliteit / Unterstützte Funktionalität / Supported Feature
 - ✅ Feedback systeem per taal / Feedback-System pro Sprache
 
 ## 🎭 Veel Plezier! / Viel Spaß! / Enjoy!
-
-JokeBloke spreekt nu jouw taal! 🇳🇱🇩🇪
+🇬🇧
 
 ---
 
-**Implementatie datum / Implementierungsdatum**: 3 januari 2026
-**Versie / Version**: 2.0 (Multi-Language)
+**Implementatie datum / Implementierungsdatum / Implementation date**: 3 januari 2026
+**Versie / Version**: 2.1 (Multi-Language + English UK)
+**Talen / Sprachen / Languages**: Nederlands, Deutsch, English (UK)
 **Talen / Sprachen / Languages**: Nederlands, Deutsch
