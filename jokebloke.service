@@ -1,0 +1,15 @@
+[Unit]
+Description=JokeBloke Voilà Application
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/jokebloke
+Environment="ANTHROPIC_API_KEY=your_api_key_here"
+ExecStart=/opt/jokebloke/venv/bin/voila jokebloke.ipynb --port=8866 --no-browser --Voila.ip=127.0.0.1 --theme=dark --template=lab
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
