@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  jokebloke:
+    build: .
+    container_name: jokebloke
+    restart: unless-stopped
+    ports:
+      - "8866:8866"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      - ./jokebloke.ipynb:/app/jokebloke.ipynb
+      - ./prompts:/app/prompts
