@@ -1,8 +1,11 @@
 # jokebloke
-JokeBloke: Co-creative comedy experience (Nederlandse versie / Dutch version)
+JokeBloke: Co-creative comedy experience (Multi-language support)
 
-TAAL: Dit project is geconfigureerd voor Nederlands als standaardtaal.
-LANGUAGE: This project is configured with Dutch as the default language.
+🌍 TALEN / SPRACHEN / LANGUAGES:
+- 🇳🇱 Nederlands (standaard / default)
+- 🇩🇪 Deutsch (German)
+
+LANGUAGE: This project supports multiple languages. Change the `LANGUAGE` variable in notebook cell 2.
 
 to generate requirements file enter:
 pip freeze > requirements.txt
@@ -32,7 +35,11 @@ pip install -r requirements.txt
 
 # install spacy
 
+# Voor Nederlands / For Dutch:
 python -m spacy download nl_core_news_sm
+
+# Für Deutsch / For German:
+python -m spacy download de_core_news_sm
 
 # install npm locally
 
