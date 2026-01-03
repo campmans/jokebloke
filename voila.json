@@ -1,0 +1,13 @@
+{
+  "VoilaConfiguration": {
+    "theme": "dark",
+    "extension_language_mapping": {
+      ".py": "python"
+    },
+    "file_whitelist": [
+      ".*\\.ipynb"
+    ],
+    "template": "lab",
+    "enable_nbextensions": true
+  }
+}

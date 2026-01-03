@@ -1,5 +1,8 @@
 # jokebloke
-JokeBloke: Co-creative comedy experience
+JokeBloke: Co-creative comedy experience (Nederlandse versie / Dutch version)
+
+TAAL: Dit project is geconfigureerd voor Nederlands als standaardtaal.
+LANGUAGE: This project is configured with Dutch as the default language.
 
 to generate requirements file enter:
 pip freeze > requirements.txt
@@ -29,7 +32,7 @@ pip install -r requirements.txt
 
 # install spacy
 
-python -m spacy download en_core_web_sm
+python -m spacy download nl_core_news_sm
 
 # install npm locally
 
@@ -56,5 +59,17 @@ npm install -g @google/gemini-cli
 echo 'export GEMINI_API_KEY="your-new-api-key-here"' >> ~/.bashrc
 source ~/.bashrc
 
-# to run in browser:
-voila jokebloke.ipynb
+# Running JokeBloke
+
+## Option 1: Quick Start with Launcher Script
+./start_jokebloke.sh
+
+## Option 2: Manual Voilà Launch
+voila jokebloke.ipynb --template=lab --theme=dark --port=8866
+
+## Option 3: Development Mode (Jupyter Lab)
+jupyter lab jokebloke.ipynb
+
+The Voilà web application will hide all code cells and provide a clean, 
+user-friendly interface for interacting with JokeBloke. The app runs at:
+http://localhost:8866
