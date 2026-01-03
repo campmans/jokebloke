@@ -4,6 +4,7 @@ JokeBloke: Co-creative comedy experience (Multi-language support)
 🌍 TALEN / SPRACHEN / LANGUAGES:
 - 🇳🇱 Nederlands (standaard / default)
 - 🇩🇪 Deutsch (German)
+- 🇬🇧 English (UK) (British English)
 
 LANGUAGE: This project supports multiple languages. Change the `LANGUAGE` variable in notebook cell 2.
 
@@ -40,6 +41,9 @@ python -m spacy download nl_core_news_sm
 
 # Für Deutsch / For German:
 python -m spacy download de_core_news_sm
+
+# For English (UK):
+python -m spacy download en_core_web_sm
 
 # install npm locally
 
