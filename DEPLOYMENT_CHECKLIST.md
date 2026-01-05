@@ -2,8 +2,8 @@
 
 ## ✅ Pre-Deployment Checklist
 
-- [ ] Server met Ubuntu 20.04+ of vergelijkbaar
-- [ ] Docker en Docker Compose geïnstalleerd op server
+- [x] Server met Ubuntu 20.04+ of vergelijkbaar
+- [] ] Docker en Docker Compose geïnstalleerd op server
 - [ ] SSH toegang tot server
 - [ ] Nginx geïnstalleerd (`sudo apt install nginx`)
 - [ ] Certbot geïnstalleerd (`sudo apt install certbot python3-certbot-nginx`)
