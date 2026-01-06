@@ -5,6 +5,9 @@ RUN apt-get update && apt-get install -y \
     portaudio19-dev \
     python3-pyaudio \
     git \
+    libglib2.0-0 \
+    libsdl2-2.0-0 \
+    libsdl2-mixer-2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
