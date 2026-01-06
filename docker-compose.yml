@@ -9,6 +9,8 @@ services:
       - "8866:8866"
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - SDL_AUDIODRIVER=dummy
+      - PYGAME_HIDE_SUPPORT_PROMPT=1
     volumes:
       - ./jokebloke.ipynb:/app/jokebloke.ipynb
       - ./prompts:/app/prompts
