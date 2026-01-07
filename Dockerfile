@@ -36,4 +36,4 @@ ENV ANTHROPIC_API_KEY=""
 
 # Run Voilà
 CMD ["voila", "jokebloke.ipynb", "--port=8866", "--no-browser", \
-     "--Voila.ip=0.0.0.0", "--theme=dark", "--template=lab"]
+     "--Voila.ip=0.0.0.0", "--theme=light"]
