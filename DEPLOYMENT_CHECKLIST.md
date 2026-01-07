@@ -3,9 +3,9 @@
 ## ✅ Pre-Deployment Checklist
 
 - [x] Server met Ubuntu 20.04+ of vergelijkbaar
-- [] ] Docker en Docker Compose geïnstalleerd op server
-- [ ] SSH toegang tot server
-- [ ] Nginx geïnstalleerd (`sudo apt install nginx`)
+- [x] Docker en Docker Compose geïnstalleerd op server
+- [x] SSH toegang tot server
+- [x] Nginx geïnstalleerd (`sudo apt install nginx`)
 - [ ] Certbot geïnstalleerd (`sudo apt install certbot python3-certbot-nginx`)
 - [ ] DNS A-record: `jokebloke.campmans.com` → `[SERVER_IP]`
 - [ ] Anthropic API key beschikbaar

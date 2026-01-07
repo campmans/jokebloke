@@ -22,8 +22,8 @@ COPY voila.json .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install spaCy model for Italian
-RUN python -m spacy download it_core_news_sm
+# Install spaCy model for Dutch
+RUN python -m spacy download nl_core_news_sm
 
 # Expose port
 EXPOSE 8866
