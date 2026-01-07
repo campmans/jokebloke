@@ -17,6 +17,13 @@ To use the Gemini CLI if you have Gemini Pro:
 
 Only use the Gemini CLI if you have a Gemini pro subscription to use the large token limits.
 
+# For Windows users
+
+1. Run follow the above installation procedure using WSL, but
+2. Instead of `environment.yml`, use the cross_platform `environment_cross_platform.yml` file to install the dependencies.
+Note: if Pygame does not detect an audio device, please use the following command:
+`sudo apt-get install libsdl2-mixer-2.0-0`
+
 # Running JokeBloke
 
 ```py
